@@ -23,6 +23,7 @@ button {
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 
 h1, h2 {
