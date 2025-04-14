@@ -42,7 +42,7 @@ body {
     width: 50%;
     margin-top: 5rem;
     gap: 2rem;
-    height: 1000px;
+    padding-bottom: 2rem;
 }
 
 p {
