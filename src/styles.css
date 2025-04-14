@@ -1,3 +1,56 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    background-color: #613134;
+    gap: 2rem;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+h1 {
+    font-family: "Kaushan Script", cursive;
+    color: white;
+}
+
 body {
-    background-color: rebeccapurple;
+    background-color: #9b5936;
+}
+
+#home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 5rem;
+    gap: 2rem;
+    height: 1000px;
+}
+
+p {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    color: white;
+}
+
+#home-img-header {
+    width: 100%;
+    border-radius: 50px;
 }
