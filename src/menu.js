@@ -11,10 +11,20 @@ export function buildMenuPage() {
         const bearlyAwake = createMenuItem('BEARLY AWAKE', 'Full English with extra everything. Comes with regret and toast.', '£10');
         const theCubClub = createMenuItem('THE CUB CLUB', 'Kid-sized breakfast minus the tantrums (hopefully).', '£6');
 
+        const lunchHeading = document.createElement('h2');
+        lunchHeading.textContent = ' Bee-licious Brunch';
+
+        const buzzedAndBenedict = createMenuItem('BUZZED & BENEDICT', "Eggs Benedict with a shot of espresso on the side. You'll need it.", "£10");
+        const pollenYourLeg = createMenuItem("POLLEN YOUR LEG", "Pancakes stacked like your overdue laundry, with syrup, berries, and lies about going to the gym.", "£8");
+
         content.appendChild(menuHeading);
         content.appendChild(breakfastHeading);
         content.appendChild(bearlyAwake);
         content.appendChild(theCubClub);
+
+        content.appendChild(lunchHeading);
+        content.appendChild(buzzedAndBenedict);
+        content.appendChild(pollenYourLeg);
     });
 }
 
