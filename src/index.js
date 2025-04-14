@@ -1,6 +1,6 @@
 import "./styles.css";
 import { buildHomePage } from "./home";
+import { buildMenuPage } from "./menu";
 
-buildHomePage();
-
-console.log('test');
+// buildHomePage();
+buildMenuPage();

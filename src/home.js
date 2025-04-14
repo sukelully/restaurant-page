@@ -3,18 +3,14 @@ import headerImg from './img/food-header.jpg';
 export function buildHomePage() {
     document.addEventListener('DOMContentLoaded', () => {
         const content = document.getElementById('content');
-        const homeContainer = document.createElement('section');
+        
         const heading = document.createElement('h1');
-        const img = document.createElement('img');
-
-        homeContainer.setAttribute('id', 'home-container');
-
         heading.textContent = 'Welcome to Bear and Bee';
-        heading.setAttribute('id', 'home-title');
-    
+        
+        const img = document.createElement('img');
         img.src = headerImg;
         img.setAttribute('id', 'home-img-header');
-    
+        
         const aboutInfo = document.createElement('p');
         aboutInfo.innerHTML = `Tucked away in the heart of Mesopotamia, Bear and Bee is a cozy, modern eatery with a love for honest food and warm hospitality. Inspired by the harmony of nature—strength and sweetness, bold flavors and delicate touches—we aim to bring comfort, creativity, and a touch of rustic charm to your plate.
         <br>
@@ -24,10 +20,8 @@ export function buildHomePage() {
         <br>
         With a relaxed atmosphere, friendly faces, and a menu that blends classic comfort with playful twists, Bear and Bee is more than just a restaurant—it's a place to unwind, connect, and indulge in food that feels good.`
     
-        homeContainer.appendChild(heading);
-        homeContainer.appendChild(img);
-        homeContainer.appendChild(aboutInfo);
-    
-        content.appendChild(homeContainer);
+        content.appendChild(heading);
+        content.appendChild(img);
+        content.appendChild(aboutInfo);
     });
 }
